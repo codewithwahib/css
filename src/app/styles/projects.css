@@ -1,0 +1,42 @@
+/* projects.css */
+
+/* Container for the projects section */
+.projects-container {
+    padding-top: 8rem; /* Equivalent to pt-32 */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Grid container for the cards */
+  .projects-grid {
+    display: grid;
+    gap: 2.5rem; /* Equivalent to gap-10 */
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+  }
+  
+  /* Large screen grid configuration */
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+    }
+  }
+  
+  /* Styling for the card hover effect */
+  .card-hover:hover {
+    outline: 2px solid #add8e6; /* Light blue outline */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Ensure no outline on default */
+  .card-hover {
+    outline: none;
+  }
+  

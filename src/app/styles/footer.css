@@ -1,0 +1,20 @@
+/* footer.css */
+
+.footer {
+    margin-top: 4rem; /* Equivalent to mt-16 */
+    padding: 1.5rem 0; /* Equivalent to py-6 */
+    text-align: center; /* Equivalent to text-center */
+    background-color: #f7b731; /* Accent color, replace with your desired color */
+    color: #ffffff; /* White text */
+    font-size: 1rem; /* Standard font size */
+  }
+  
+  .footer a {
+    color: #ffffff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+  }
+  

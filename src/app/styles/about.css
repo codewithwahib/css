@@ -1,0 +1,40 @@
+/* about.css */
+
+.about-container {
+    padding: 2rem; /* Equivalent to padding in Tailwind */
+    background-color: #111111; /* You can adjust to your desired background color */
+  }
+  
+  .about-container h2 {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 600; /* Similar to the default font weight for titles */
+    color: #ffffff; /* White text color */
+    transition: transform 0.3s ease; /* Animation for zoom-in effect */
+  }
+  
+  .about-container p {
+    color: #b0b0b0; /* Adjusted text color */
+    padding-top: 1rem; /* Equivalent to pt-4 */
+    font-size: 1rem; /* Standard font size */
+  }
+  
+  .about-container h2[data-aos="zoom-in-left"] {
+    transform: translateX(-50px);
+    opacity: 0;
+    animation: zoomInLeft 0.5s forwards;
+  }
+  
+  @keyframes zoomInLeft {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive font sizes for larger screens */
+  @media (min-width: 768px) {
+    .about-container h2 {
+      font-size: 3rem; /* Equivalent to md:text-5xl */
+    }
+  }
+  
